@@ -113,6 +113,36 @@ bool Surface_::init(InstanceWeakPtr instance, const pvrvk::PhysicalDevice& physi
 		Log("Wayland platform not supported");
 		debug_assertion(false, "Wayland platform not supported");
 	}
+#elif defined(VK_USE_PLATFORM_IOS_MVK)
+    if (instance->isInstanceExtensionEnabled(VK_MVK_IOS_SURFACE_EXTENSION_NAME))
+    {
+        VkIOSSurfaceCreateInfoMVK surfaceCreateInfo = {};
+        surfaceCreateInfo.sType = VkStructureType::e_IOS_SURFACE_CREATE_INFO_MVK;
+        surfaceCreateInfo.pNext = NULL;
+        surfaceCreateInfo.flags = 0;
+        surfaceCreateInfo.pView = _nativeDisplay;
+        vkThrowIfFailed(vk::CreateIOSSurfaceMVK(instance->getNativeObject(), &surfaceCreateInfo, nullptr, &_surface), "failed to create iOS surface, returned an error");
+    }
+    else
+    {
+        Log("iOS platform not supported");
+        debug_assertion(false, "iOS platform not supported");
+    }
+#elif defined(VK_USE_PLATFORM_MACOS_MVK)
+    if (instance->isInstanceExtensionEnabled(VK_MVK_MACOS_SURFACE_EXTENSION_NAME))
+    {
+        VkMacOSSurfaceCreateInfoMVK surfaceCreateInfo = {};
+        surfaceCreateInfo.sType = VkStructureType::e_MACOS_SURFACE_CREATE_INFO_MVK;
+        surfaceCreateInfo.pNext = NULL;
+        surfaceCreateInfo.flags = 0;
+        surfaceCreateInfo.pView = _nativeDisplay;
+        vkThrowIfFailed(vk::CreateMacOSSurfaceMVK(instance->getNativeObject(), &surfaceCreateInfo, NULL, &_surface), "failed to create mac OS surface, returned an error");
+    }
+    else
+    {
+        Log("macOS platform not supported");
+        debug_assertion(false, "macOS platform not supported");
+    }
 #else // NullWS
 	VkDisplayPropertiesKHR properties = {};
 	uint32_t numProperties = 1;

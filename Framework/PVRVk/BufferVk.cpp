@@ -25,7 +25,6 @@ inline bool createBuffer(VkDevice device, VkBufferUsageFlags usage, VkDeviceSize
 	createInfo.sharingMode = (sharingExclusive ? VkSharingMode::e_EXCLUSIVE : VkSharingMode::e_CONCURRENT);
 	createInfo.pQueueFamilyIndices = queueFamilyIndices;
 	createInfo.queueFamilyIndexCount = numQueueFamilyIndices;
-	createInfo.sharingMode = VkSharingMode::e_EXCLUSIVE;
 	if (vk::CreateBuffer(device, &createInfo, nullptr, &outBuffer) != VkResult::e_SUCCESS)
 	{
 		Log(LogLevel::Error, "Failed to create Buffer");

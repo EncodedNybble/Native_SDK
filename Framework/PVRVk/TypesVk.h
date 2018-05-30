@@ -942,6 +942,9 @@ typedef void* NativeDisplay;//!< Windows native display
 #elif defined(X11)
 typedef void* NativeWindow;//!< X11 native window
 typedef void* NativeDisplay;//!< X11 native display
+#elif defined(__APPLE__)
+typedef void* NativeWindow;//!< Apple native window
+typedef void* NativeDisplay;//!< Apple native display
 #else
 typedef void* NativeWindow;//!< Nullws Native window
 typedef VkDisplayKHR NativeDisplay;//!< Nullws native display

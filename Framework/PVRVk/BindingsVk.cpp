@@ -14,8 +14,8 @@ namespace internals {
 /** DEFINE THE PLATFORM SPECIFIC LIBRARY NAME **/
 #ifdef _WIN32
 static const char* libName = "vulkan-1.dll";
-#elif defined(TARGET_OS_MAC)
-static const char* libName = "libvulkan.dylib";
+#elif defined(VK_USE_PLATFORM_MACOS_MVK) || defined(VK_USE_PLATFORM_IOS_MVK)
+static const char* libName = "libMoltenVK.dylib";
 #else
 static const char* libName = "libvulkan.so.1;libvulkan.so";
 #endif
@@ -75,7 +75,10 @@ inline void* GetLibFunction(LIBTYPE hLib, const char* pszName)
 }
 #elif defined( __linux__ ) || defined(__QNXNTO__) || defined(__APPLE__)
 #if defined(__APPLE__)
-void* OpenFramework(const char* pszPath);
+#include <dlfcn.h>
+void* OpenFramework(const char* pszPath) {
+    return dlopen(pszPath, RTLD_LAZY | RTLD_GLOBAL);
+}
 #endif
 #include <unistd.h>
 #include <dlfcn.h>
@@ -363,6 +366,10 @@ PVR_VULKAN_FUNCTION_POINTER_DEFINITION(CreateXlibSurfaceKHR);
 PVR_VULKAN_FUNCTION_POINTER_DEFINITION(CreateXcbSurfaceKHR);
 #elif defined(VK_USE_PLATFORM_WAYLAND_KHR)
 PVR_VULKAN_FUNCTION_POINTER_DEFINITION(CreateWaylandSurfaceKHR);
+#elif defined(VK_USE_PLATFORM_IOS_MVK)
+PVR_VULKAN_FUNCTION_POINTER_DEFINITION(CreateIOSSurfaceMVK);
+#elif defined(VK_USE_PLATFORM_MACOS_MVK)
+PVR_VULKAN_FUNCTION_POINTER_DEFINITION(CreateMacOSSurfaceMVK);
 #else
 PVR_VULKAN_FUNCTION_POINTER_DEFINITION(GetPhysicalDeviceDisplayPropertiesKHR);
 PVR_VULKAN_FUNCTION_POINTER_DEFINITION(GetDisplayModePropertiesKHR);
@@ -576,6 +583,10 @@ bool vk::initVulkanInstance(VkInstance instance)
 	PVR_VULKAN_GET_INSTANCE_POINTER(instance, CreateXcbSurfaceKHR);
 #elif defined(VK_USE_PLATFORM_WAYLAND_KHR)
 	PVR_VULKAN_GET_INSTANCE_POINTER(instance, CreateWaylandSurfaceKHR);
+#elif defined(VK_USE_PLATFORM_IOS_MVK)
+    PVR_VULKAN_GET_INSTANCE_POINTER(instance, CreateIOSSurfaceMVK);
+#elif defined(VK_USE_PLATFORM_MACOS_MVK)
+    PVR_VULKAN_GET_INSTANCE_POINTER(instance, CreateMacOSSurfaceMVK);
 #else
 	PVR_VULKAN_GET_INSTANCE_POINTER(instance, GetPhysicalDeviceDisplayPropertiesKHR);
 	PVR_VULKAN_GET_INSTANCE_POINTER(instance, GetDisplayModePropertiesKHR);
