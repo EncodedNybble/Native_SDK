@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D63AB47C20D1953C0003BAD5 /* StructuredMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB47720D1953C0003BAD5 /* StructuredMemory.h */; };
+		D63AB47D20D1953C0003BAD5 /* PVRUtilsGles.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB47820D1953C0003BAD5 /* PVRUtilsGles.h */; };
+		D63AB47E20D1953C0003BAD5 /* ArialBoldFont.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB47920D1953C0003BAD5 /* ArialBoldFont.h */; };
+		D63AB47F20D1953C0003BAD5 /* PowerVRLogo.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB47A20D1953C0003BAD5 /* PowerVRLogo.h */; };
+		D63AB48020D1953C0003BAD5 /* PVRUtilsVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB47B20D1953C0003BAD5 /* PVRUtilsVk.h */; };
+		D63AB49220D1955A0003BAD5 /* ConvertToVkTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB48120D195580003BAD5 /* ConvertToVkTypes.h */; };
+		D63AB49320D1955A0003BAD5 /* AsynchronousVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB48220D195580003BAD5 /* AsynchronousVk.h */; };
+		D63AB49420D1955A0003BAD5 /* HelperVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB48320D195590003BAD5 /* HelperVk.cpp */; };
+		D63AB49520D1955A0003BAD5 /* RenderManagerVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB48420D195590003BAD5 /* RenderManagerVk.h */; };
+		D63AB49620D1955A0003BAD5 /* SpriteVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB48520D195590003BAD5 /* SpriteVk.cpp */; };
+		D63AB49720D1955A0003BAD5 /* UIRendererShader_vk.fsh.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB48620D195590003BAD5 /* UIRendererShader_vk.fsh.h */; };
+		D63AB49820D1955A0003BAD5 /* EffectVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB48720D195590003BAD5 /* EffectVk.h */; };
+		D63AB49920D1955A0003BAD5 /* MemoryAllocator.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB48820D195590003BAD5 /* MemoryAllocator.h */; };
+		D63AB49A20D1955A0003BAD5 /* EffectVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB48920D195590003BAD5 /* EffectVk.cpp */; };
+		D63AB49B20D1955A0003BAD5 /* UIRendererShader_vk.vsh.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB48A20D195590003BAD5 /* UIRendererShader_vk.vsh.h */; };
+		D63AB49C20D1955A0003BAD5 /* HelperVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB48B20D195590003BAD5 /* HelperVk.h */; };
+		D63AB49D20D1955A0003BAD5 /* UIRendererVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB48C20D195590003BAD5 /* UIRendererVk.cpp */; };
+		D63AB49E20D1955A0003BAD5 /* UIRendererVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB48D20D1955A0003BAD5 /* UIRendererVk.h */; };
+		D63AB49F20D1955A0003BAD5 /* SpriteVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB49020D1955A0003BAD5 /* SpriteVk.h */; };
+		D63AB4A020D1955A0003BAD5 /* RenderManagerVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB49120D1955A0003BAD5 /* RenderManagerVk.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D63AB46820D185A30003BAD5 /* libPVRUtilsVk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPVRUtilsVk.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D63AB47720D1953C0003BAD5 /* StructuredMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StructuredMemory.h; path = ../../../StructuredMemory.h; sourceTree = "<group>"; };
+		D63AB47820D1953C0003BAD5 /* PVRUtilsGles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRUtilsGles.h; path = ../../../PVRUtilsGles.h; sourceTree = "<group>"; };
+		D63AB47920D1953C0003BAD5 /* ArialBoldFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArialBoldFont.h; path = ../../../ArialBoldFont.h; sourceTree = "<group>"; };
+		D63AB47A20D1953C0003BAD5 /* PowerVRLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PowerVRLogo.h; path = ../../../PowerVRLogo.h; sourceTree = "<group>"; };
+		D63AB47B20D1953C0003BAD5 /* PVRUtilsVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRUtilsVk.h; path = ../../../PVRUtilsVk.h; sourceTree = "<group>"; };
+		D63AB48120D195580003BAD5 /* ConvertToVkTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConvertToVkTypes.h; path = ../../ConvertToVkTypes.h; sourceTree = "<group>"; };
+		D63AB48220D195580003BAD5 /* AsynchronousVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsynchronousVk.h; path = ../../AsynchronousVk.h; sourceTree = "<group>"; };
+		D63AB48320D195590003BAD5 /* HelperVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HelperVk.cpp; path = ../../HelperVk.cpp; sourceTree = "<group>"; };
+		D63AB48420D195590003BAD5 /* RenderManagerVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderManagerVk.h; path = ../../RenderManagerVk.h; sourceTree = "<group>"; };
+		D63AB48520D195590003BAD5 /* SpriteVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteVk.cpp; path = ../../SpriteVk.cpp; sourceTree = "<group>"; };
+		D63AB48620D195590003BAD5 /* UIRendererShader_vk.fsh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIRendererShader_vk.fsh.h; path = ../../UIRendererShader_vk.fsh.h; sourceTree = "<group>"; };
+		D63AB48720D195590003BAD5 /* EffectVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EffectVk.h; path = ../../EffectVk.h; sourceTree = "<group>"; };
+		D63AB48820D195590003BAD5 /* MemoryAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemoryAllocator.h; path = ../../MemoryAllocator.h; sourceTree = "<group>"; };
+		D63AB48920D195590003BAD5 /* EffectVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EffectVk.cpp; path = ../../EffectVk.cpp; sourceTree = "<group>"; };
+		D63AB48A20D195590003BAD5 /* UIRendererShader_vk.vsh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIRendererShader_vk.vsh.h; path = ../../UIRendererShader_vk.vsh.h; sourceTree = "<group>"; };
+		D63AB48B20D195590003BAD5 /* HelperVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelperVk.h; path = ../../HelperVk.h; sourceTree = "<group>"; };
+		D63AB48C20D195590003BAD5 /* UIRendererVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UIRendererVk.cpp; path = ../../UIRendererVk.cpp; sourceTree = "<group>"; };
+		D63AB48D20D1955A0003BAD5 /* UIRendererVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIRendererVk.h; path = ../../UIRendererVk.h; sourceTree = "<group>"; };
+		D63AB48E20D1955A0003BAD5 /* UIRendererShader_vk.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = UIRendererShader_vk.fsh; path = ../../UIRendererShader_vk.fsh; sourceTree = "<group>"; };
+		D63AB48F20D1955A0003BAD5 /* UIRendererShader_vk.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = UIRendererShader_vk.vsh; path = ../../UIRendererShader_vk.vsh; sourceTree = "<group>"; };
+		D63AB49020D1955A0003BAD5 /* SpriteVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteVk.h; path = ../../SpriteVk.h; sourceTree = "<group>"; };
+		D63AB49120D1955A0003BAD5 /* RenderManagerVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderManagerVk.cpp; path = ../../RenderManagerVk.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D63AB46520D185A30003BAD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D63AB45F20D185A30003BAD5 = {
+			isa = PBXGroup;
+			children = (
+				D63AB47620D186F70003BAD5 /* Sources */,
+				D63AB46920D185A30003BAD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D63AB46920D185A30003BAD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D63AB46820D185A30003BAD5 /* libPVRUtilsVk.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D63AB47620D186F70003BAD5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D63AB48220D195580003BAD5 /* AsynchronousVk.h */,
+				D63AB48120D195580003BAD5 /* ConvertToVkTypes.h */,
+				D63AB48920D195590003BAD5 /* EffectVk.cpp */,
+				D63AB48720D195590003BAD5 /* EffectVk.h */,
+				D63AB48320D195590003BAD5 /* HelperVk.cpp */,
+				D63AB48B20D195590003BAD5 /* HelperVk.h */,
+				D63AB48820D195590003BAD5 /* MemoryAllocator.h */,
+				D63AB49120D1955A0003BAD5 /* RenderManagerVk.cpp */,
+				D63AB48420D195590003BAD5 /* RenderManagerVk.h */,
+				D63AB48520D195590003BAD5 /* SpriteVk.cpp */,
+				D63AB49020D1955A0003BAD5 /* SpriteVk.h */,
+				D63AB48E20D1955A0003BAD5 /* UIRendererShader_vk.fsh */,
+				D63AB48620D195590003BAD5 /* UIRendererShader_vk.fsh.h */,
+				D63AB48F20D1955A0003BAD5 /* UIRendererShader_vk.vsh */,
+				D63AB48A20D195590003BAD5 /* UIRendererShader_vk.vsh.h */,
+				D63AB48C20D195590003BAD5 /* UIRendererVk.cpp */,
+				D63AB48D20D1955A0003BAD5 /* UIRendererVk.h */,
+				D63AB47920D1953C0003BAD5 /* ArialBoldFont.h */,
+				D63AB47A20D1953C0003BAD5 /* PowerVRLogo.h */,
+				D63AB47820D1953C0003BAD5 /* PVRUtilsGles.h */,
+				D63AB47B20D1953C0003BAD5 /* PVRUtilsVk.h */,
+				D63AB47720D1953C0003BAD5 /* StructuredMemory.h */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D63AB46620D185A30003BAD5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D63AB49820D1955A0003BAD5 /* EffectVk.h in Headers */,
+				D63AB49220D1955A0003BAD5 /* ConvertToVkTypes.h in Headers */,
+				D63AB49E20D1955A0003BAD5 /* UIRendererVk.h in Headers */,
+				D63AB49B20D1955A0003BAD5 /* UIRendererShader_vk.vsh.h in Headers */,
+				D63AB47D20D1953C0003BAD5 /* PVRUtilsGles.h in Headers */,
+				D63AB48020D1953C0003BAD5 /* PVRUtilsVk.h in Headers */,
+				D63AB49520D1955A0003BAD5 /* RenderManagerVk.h in Headers */,
+				D63AB49C20D1955A0003BAD5 /* HelperVk.h in Headers */,
+				D63AB47F20D1953C0003BAD5 /* PowerVRLogo.h in Headers */,
+				D63AB47C20D1953C0003BAD5 /* StructuredMemory.h in Headers */,
+				D63AB49720D1955A0003BAD5 /* UIRendererShader_vk.fsh.h in Headers */,
+				D63AB47E20D1953C0003BAD5 /* ArialBoldFont.h in Headers */,
+				D63AB49F20D1955A0003BAD5 /* SpriteVk.h in Headers */,
+				D63AB49920D1955A0003BAD5 /* MemoryAllocator.h in Headers */,
+				D63AB49320D1955A0003BAD5 /* AsynchronousVk.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D63AB46720D185A30003BAD5 /* PVRUtilsVk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D63AB47320D185A30003BAD5 /* Build configuration list for PBXNativeTarget "PVRUtilsVk" */;
+			buildPhases = (
+				D63AB46420D185A30003BAD5 /* Sources */,
+				D63AB46520D185A30003BAD5 /* Frameworks */,
+				D63AB46620D185A30003BAD5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PVRUtilsVk;
+			productName = PVRUtilsVk;
+			productReference = D63AB46820D185A30003BAD5 /* libPVRUtilsVk.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D63AB46020D185A30003BAD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Imagination Technologies";
+				TargetAttributes = {
+					D63AB46720D185A30003BAD5 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = D63AB46320D185A30003BAD5 /* Build configuration list for PBXProject "PVRUtilsVk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D63AB45F20D185A30003BAD5;
+			productRefGroup = D63AB46920D185A30003BAD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D63AB46720D185A30003BAD5 /* PVRUtilsVk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D63AB46420D185A30003BAD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D63AB49420D1955A0003BAD5 /* HelperVk.cpp in Sources */,
+				D63AB4A020D1955A0003BAD5 /* RenderManagerVk.cpp in Sources */,
+				D63AB49A20D1955A0003BAD5 /* EffectVk.cpp in Sources */,
+				D63AB49620D1955A0003BAD5 /* SpriteVk.cpp in Sources */,
+				D63AB49D20D1955A0003BAD5 /* UIRendererVk.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D63AB47120D185A30003BAD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "../../../Bin/OSX/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../../../,
+					../../../,
+					../../../../../Builds/Include/,
+					../../../../../,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D63AB47220D185A30003BAD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "../../../Bin/OSX/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../../../,
+					../../../,
+					../../../../../Builds/Include/,
+					../../../../../,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D63AB47420D185A30003BAD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D63AB47520D185A30003BAD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D63AB46320D185A30003BAD5 /* Build configuration list for PBXProject "PVRUtilsVk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D63AB47120D185A30003BAD5 /* Debug */,
+				D63AB47220D185A30003BAD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D63AB47320D185A30003BAD5 /* Build configuration list for PBXNativeTarget "PVRUtilsVk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D63AB47420D185A30003BAD5 /* Debug */,
+				D63AB47520D185A30003BAD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D63AB46020D185A30003BAD5 /* Project object */;
+}

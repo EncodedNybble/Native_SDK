@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D63AB39520D06D810003BAD5 /* CommandPoolVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB35E20D06D7B0003BAD5 /* CommandPoolVk.h */; };
+		D63AB39620D06D810003BAD5 /* InstanceVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB35F20D06D7C0003BAD5 /* InstanceVk.cpp */; };
+		D63AB39720D06D810003BAD5 /* QueueVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB36020D06D7C0003BAD5 /* QueueVk.cpp */; };
+		D63AB39820D06D810003BAD5 /* DeviceMemoryVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB36120D06D7C0003BAD5 /* DeviceMemoryVk.h */; };
+		D63AB39920D06D810003BAD5 /* PipelineConfigVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB36220D06D7C0003BAD5 /* PipelineConfigVk.h */; };
+		D63AB39A20D06D810003BAD5 /* ExtensionsVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB36320D06D7C0003BAD5 /* ExtensionsVk.h */; };
+		D63AB39B20D06D810003BAD5 /* SamplerVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB36420D06D7C0003BAD5 /* SamplerVk.h */; };
+		D63AB39C20D06D810003BAD5 /* SwapchainVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB36520D06D7C0003BAD5 /* SwapchainVk.cpp */; };
+		D63AB39D20D06D810003BAD5 /* ComputePipelineVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB36620D06D7C0003BAD5 /* ComputePipelineVk.h */; };
+		D63AB39E20D06D810003BAD5 /* PipelineCacheVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB36720D06D7C0003BAD5 /* PipelineCacheVk.h */; };
+		D63AB39F20D06D810003BAD5 /* LayersVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB36820D06D7C0003BAD5 /* LayersVk.cpp */; };
+		D63AB3A020D06D810003BAD5 /* SurfaceVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB36920D06D7C0003BAD5 /* SurfaceVk.cpp */; };
+		D63AB3A120D06D810003BAD5 /* PopulateCreateInfoVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB36A20D06D7C0003BAD5 /* PopulateCreateInfoVk.h */; };
+		D63AB3A220D06D810003BAD5 /* PhysicalDeviceVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB36B20D06D7C0003BAD5 /* PhysicalDeviceVk.cpp */; };
+		D63AB3A320D06D810003BAD5 /* CommandPoolVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB36C20D06D7C0003BAD5 /* CommandPoolVk.cpp */; };
+		D63AB3A420D06D810003BAD5 /* DeviceVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB36D20D06D7C0003BAD5 /* DeviceVk.h */; };
+		D63AB3A520D06D810003BAD5 /* ApiObjectsVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB36E20D06D7C0003BAD5 /* ApiObjectsVk.h */; };
+		D63AB3A620D06D810003BAD5 /* DescriptorSetVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB36F20D06D7C0003BAD5 /* DescriptorSetVk.h */; };
+		D63AB3A720D06D810003BAD5 /* BufferVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB37020D06D7C0003BAD5 /* BufferVk.h */; };
+		D63AB3A820D06D810003BAD5 /* GraphicsPipelineVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB37120D06D7C0003BAD5 /* GraphicsPipelineVk.h */; };
+		D63AB3A920D06D810003BAD5 /* InstanceVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB37220D06D7D0003BAD5 /* InstanceVk.h */; };
+		D63AB3AA20D06D810003BAD5 /* FramebufferVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB37320D06D7D0003BAD5 /* FramebufferVk.cpp */; };
+		D63AB3AB20D06D810003BAD5 /* FramebufferVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB37420D06D7D0003BAD5 /* FramebufferVk.h */; };
+		D63AB3AC20D06D810003BAD5 /* SwapchainVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB37520D06D7D0003BAD5 /* SwapchainVk.h */; };
+		D63AB3AD20D06D810003BAD5 /* ImageVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB37620D06D7D0003BAD5 /* ImageVk.h */; };
+		D63AB3AE20D06D810003BAD5 /* RenderPassVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB37720D06D7D0003BAD5 /* RenderPassVk.cpp */; };
+		D63AB3AF20D06D810003BAD5 /* PipelineLayoutVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB37820D06D7D0003BAD5 /* PipelineLayoutVk.h */; };
+		D63AB3B020D06D810003BAD5 /* PVRVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB37920D06D7D0003BAD5 /* PVRVk.h */; };
+		D63AB3B120D06D810003BAD5 /* RefCounted.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB37A20D06D7D0003BAD5 /* RefCounted.h */; };
+		D63AB3B220D06D810003BAD5 /* ShaderVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB37B20D06D7D0003BAD5 /* ShaderVk.h */; };
+		D63AB3B320D06D810003BAD5 /* BindingsVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB37C20D06D7D0003BAD5 /* BindingsVk.h */; };
+		D63AB3B420D06D810003BAD5 /* CommandBufferVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB37D20D06D7E0003BAD5 /* CommandBufferVk.cpp */; };
+		D63AB3B520D06D810003BAD5 /* QueueVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB37E20D06D7E0003BAD5 /* QueueVk.h */; };
+		D63AB3B620D06D810003BAD5 /* PipelineLayoutVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB37F20D06D7E0003BAD5 /* PipelineLayoutVk.cpp */; };
+		D63AB3B720D06D810003BAD5 /* ErrorsVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB38020D06D7E0003BAD5 /* ErrorsVk.h */; };
+		D63AB3B820D06D810003BAD5 /* DescriptorSetVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB38120D06D7E0003BAD5 /* DescriptorSetVk.cpp */; };
+		D63AB3B920D06D810003BAD5 /* PhysicalDeviceVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB38220D06D7E0003BAD5 /* PhysicalDeviceVk.h */; };
+		D63AB3BA20D06D810003BAD5 /* SurfaceVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB38320D06D7F0003BAD5 /* SurfaceVk.h */; };
+		D63AB3BB20D06D810003BAD5 /* DeviceVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB38420D06D7F0003BAD5 /* DeviceVk.cpp */; };
+		D63AB3BC20D06D810003BAD5 /* ImageVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB38520D06D7F0003BAD5 /* ImageVk.cpp */; };
+		D63AB3BD20D06D810003BAD5 /* SyncVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB38620D06D7F0003BAD5 /* SyncVk.h */; };
+		D63AB3BE20D06D810003BAD5 /* GraphicsPipelineVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB38720D06D7F0003BAD5 /* GraphicsPipelineVk.cpp */; };
+		D63AB3BF20D06D810003BAD5 /* TypesVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB38820D06D800003BAD5 /* TypesVk.h */; };
+		D63AB3C020D06D810003BAD5 /* SyncVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB38920D06D800003BAD5 /* SyncVk.cpp */; };
+		D63AB3C120D06D810003BAD5 /* ExtensionsVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB38A20D06D800003BAD5 /* ExtensionsVk.cpp */; };
+		D63AB3C220D06D810003BAD5 /* ForwardDecObjectsVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB38B20D06D800003BAD5 /* ForwardDecObjectsVk.h */; };
+		D63AB3C320D06D810003BAD5 /* SamplerVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB38C20D06D800003BAD5 /* SamplerVk.cpp */; };
+		D63AB3C420D06D810003BAD5 /* HeadersVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB38D20D06D800003BAD5 /* HeadersVk.h */; };
+		D63AB3C520D06D810003BAD5 /* LayersVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB38E20D06D800003BAD5 /* LayersVk.h */; };
+		D63AB3C620D06D810003BAD5 /* Log.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB38F20D06D800003BAD5 /* Log.h */; };
+		D63AB3C720D06D810003BAD5 /* BindingsVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB39020D06D810003BAD5 /* BindingsVk.cpp */; };
+		D63AB3C820D06D810003BAD5 /* ShaderVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB39120D06D810003BAD5 /* ShaderVk.cpp */; };
+		D63AB3C920D06D810003BAD5 /* BufferVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB39220D06D810003BAD5 /* BufferVk.cpp */; };
+		D63AB3CA20D06D810003BAD5 /* CommandBufferVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB39320D06D810003BAD5 /* CommandBufferVk.h */; };
+		D63AB3CB20D06D810003BAD5 /* RenderPassVk.h in Headers */ = {isa = PBXBuildFile; fileRef = D63AB39420D06D810003BAD5 /* RenderPassVk.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D63AB34F20D06CD20003BAD5 /* libPVRVk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPVRVk.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D63AB35E20D06D7B0003BAD5 /* CommandPoolVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommandPoolVk.h; path = ../../CommandPoolVk.h; sourceTree = "<group>"; };
+		D63AB35F20D06D7C0003BAD5 /* InstanceVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InstanceVk.cpp; path = ../../InstanceVk.cpp; sourceTree = "<group>"; };
+		D63AB36020D06D7C0003BAD5 /* QueueVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = QueueVk.cpp; path = ../../QueueVk.cpp; sourceTree = "<group>"; };
+		D63AB36120D06D7C0003BAD5 /* DeviceMemoryVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceMemoryVk.h; path = ../../DeviceMemoryVk.h; sourceTree = "<group>"; };
+		D63AB36220D06D7C0003BAD5 /* PipelineConfigVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PipelineConfigVk.h; path = ../../PipelineConfigVk.h; sourceTree = "<group>"; };
+		D63AB36320D06D7C0003BAD5 /* ExtensionsVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExtensionsVk.h; path = ../../ExtensionsVk.h; sourceTree = "<group>"; };
+		D63AB36420D06D7C0003BAD5 /* SamplerVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SamplerVk.h; path = ../../SamplerVk.h; sourceTree = "<group>"; };
+		D63AB36520D06D7C0003BAD5 /* SwapchainVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SwapchainVk.cpp; path = ../../SwapchainVk.cpp; sourceTree = "<group>"; };
+		D63AB36620D06D7C0003BAD5 /* ComputePipelineVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComputePipelineVk.h; path = ../../ComputePipelineVk.h; sourceTree = "<group>"; };
+		D63AB36720D06D7C0003BAD5 /* PipelineCacheVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PipelineCacheVk.h; path = ../../PipelineCacheVk.h; sourceTree = "<group>"; };
+		D63AB36820D06D7C0003BAD5 /* LayersVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LayersVk.cpp; path = ../../LayersVk.cpp; sourceTree = "<group>"; };
+		D63AB36920D06D7C0003BAD5 /* SurfaceVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SurfaceVk.cpp; path = ../../SurfaceVk.cpp; sourceTree = "<group>"; };
+		D63AB36A20D06D7C0003BAD5 /* PopulateCreateInfoVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopulateCreateInfoVk.h; path = ../../PopulateCreateInfoVk.h; sourceTree = "<group>"; };
+		D63AB36B20D06D7C0003BAD5 /* PhysicalDeviceVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PhysicalDeviceVk.cpp; path = ../../PhysicalDeviceVk.cpp; sourceTree = "<group>"; };
+		D63AB36C20D06D7C0003BAD5 /* CommandPoolVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CommandPoolVk.cpp; path = ../../CommandPoolVk.cpp; sourceTree = "<group>"; };
+		D63AB36D20D06D7C0003BAD5 /* DeviceVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceVk.h; path = ../../DeviceVk.h; sourceTree = "<group>"; };
+		D63AB36E20D06D7C0003BAD5 /* ApiObjectsVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApiObjectsVk.h; path = ../../ApiObjectsVk.h; sourceTree = "<group>"; };
+		D63AB36F20D06D7C0003BAD5 /* DescriptorSetVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DescriptorSetVk.h; path = ../../DescriptorSetVk.h; sourceTree = "<group>"; };
+		D63AB37020D06D7C0003BAD5 /* BufferVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BufferVk.h; path = ../../BufferVk.h; sourceTree = "<group>"; };
+		D63AB37120D06D7C0003BAD5 /* GraphicsPipelineVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraphicsPipelineVk.h; path = ../../GraphicsPipelineVk.h; sourceTree = "<group>"; };
+		D63AB37220D06D7D0003BAD5 /* InstanceVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstanceVk.h; path = ../../InstanceVk.h; sourceTree = "<group>"; };
+		D63AB37320D06D7D0003BAD5 /* FramebufferVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FramebufferVk.cpp; path = ../../FramebufferVk.cpp; sourceTree = "<group>"; };
+		D63AB37420D06D7D0003BAD5 /* FramebufferVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FramebufferVk.h; path = ../../FramebufferVk.h; sourceTree = "<group>"; };
+		D63AB37520D06D7D0003BAD5 /* SwapchainVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwapchainVk.h; path = ../../SwapchainVk.h; sourceTree = "<group>"; };
+		D63AB37620D06D7D0003BAD5 /* ImageVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageVk.h; path = ../../ImageVk.h; sourceTree = "<group>"; };
+		D63AB37720D06D7D0003BAD5 /* RenderPassVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderPassVk.cpp; path = ../../RenderPassVk.cpp; sourceTree = "<group>"; };
+		D63AB37820D06D7D0003BAD5 /* PipelineLayoutVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PipelineLayoutVk.h; path = ../../PipelineLayoutVk.h; sourceTree = "<group>"; };
+		D63AB37920D06D7D0003BAD5 /* PVRVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRVk.h; path = ../../PVRVk.h; sourceTree = "<group>"; };
+		D63AB37A20D06D7D0003BAD5 /* RefCounted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RefCounted.h; path = ../../RefCounted.h; sourceTree = "<group>"; };
+		D63AB37B20D06D7D0003BAD5 /* ShaderVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderVk.h; path = ../../ShaderVk.h; sourceTree = "<group>"; };
+		D63AB37C20D06D7D0003BAD5 /* BindingsVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BindingsVk.h; path = ../../BindingsVk.h; sourceTree = "<group>"; };
+		D63AB37D20D06D7E0003BAD5 /* CommandBufferVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CommandBufferVk.cpp; path = ../../CommandBufferVk.cpp; sourceTree = "<group>"; };
+		D63AB37E20D06D7E0003BAD5 /* QueueVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QueueVk.h; path = ../../QueueVk.h; sourceTree = "<group>"; };
+		D63AB37F20D06D7E0003BAD5 /* PipelineLayoutVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PipelineLayoutVk.cpp; path = ../../PipelineLayoutVk.cpp; sourceTree = "<group>"; };
+		D63AB38020D06D7E0003BAD5 /* ErrorsVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ErrorsVk.h; path = ../../ErrorsVk.h; sourceTree = "<group>"; };
+		D63AB38120D06D7E0003BAD5 /* DescriptorSetVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DescriptorSetVk.cpp; path = ../../DescriptorSetVk.cpp; sourceTree = "<group>"; };
+		D63AB38220D06D7E0003BAD5 /* PhysicalDeviceVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhysicalDeviceVk.h; path = ../../PhysicalDeviceVk.h; sourceTree = "<group>"; };
+		D63AB38320D06D7F0003BAD5 /* SurfaceVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SurfaceVk.h; path = ../../SurfaceVk.h; sourceTree = "<group>"; };
+		D63AB38420D06D7F0003BAD5 /* DeviceVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DeviceVk.cpp; path = ../../DeviceVk.cpp; sourceTree = "<group>"; };
+		D63AB38520D06D7F0003BAD5 /* ImageVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ImageVk.cpp; path = ../../ImageVk.cpp; sourceTree = "<group>"; };
+		D63AB38620D06D7F0003BAD5 /* SyncVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SyncVk.h; path = ../../SyncVk.h; sourceTree = "<group>"; };
+		D63AB38720D06D7F0003BAD5 /* GraphicsPipelineVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GraphicsPipelineVk.cpp; path = ../../GraphicsPipelineVk.cpp; sourceTree = "<group>"; };
+		D63AB38820D06D800003BAD5 /* TypesVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TypesVk.h; path = ../../TypesVk.h; sourceTree = "<group>"; };
+		D63AB38920D06D800003BAD5 /* SyncVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SyncVk.cpp; path = ../../SyncVk.cpp; sourceTree = "<group>"; };
+		D63AB38A20D06D800003BAD5 /* ExtensionsVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ExtensionsVk.cpp; path = ../../ExtensionsVk.cpp; sourceTree = "<group>"; };
+		D63AB38B20D06D800003BAD5 /* ForwardDecObjectsVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForwardDecObjectsVk.h; path = ../../ForwardDecObjectsVk.h; sourceTree = "<group>"; };
+		D63AB38C20D06D800003BAD5 /* SamplerVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SamplerVk.cpp; path = ../../SamplerVk.cpp; sourceTree = "<group>"; };
+		D63AB38D20D06D800003BAD5 /* HeadersVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeadersVk.h; path = ../../HeadersVk.h; sourceTree = "<group>"; };
+		D63AB38E20D06D800003BAD5 /* LayersVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayersVk.h; path = ../../LayersVk.h; sourceTree = "<group>"; };
+		D63AB38F20D06D800003BAD5 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Log.h; path = ../../Log.h; sourceTree = "<group>"; };
+		D63AB39020D06D810003BAD5 /* BindingsVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BindingsVk.cpp; path = ../../BindingsVk.cpp; sourceTree = "<group>"; };
+		D63AB39120D06D810003BAD5 /* ShaderVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShaderVk.cpp; path = ../../ShaderVk.cpp; sourceTree = "<group>"; };
+		D63AB39220D06D810003BAD5 /* BufferVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BufferVk.cpp; path = ../../BufferVk.cpp; sourceTree = "<group>"; };
+		D63AB39320D06D810003BAD5 /* CommandBufferVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommandBufferVk.h; path = ../../CommandBufferVk.h; sourceTree = "<group>"; };
+		D63AB39420D06D810003BAD5 /* RenderPassVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderPassVk.h; path = ../../RenderPassVk.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D63AB34C20D06CD20003BAD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D63AB34620D06CD20003BAD5 = {
+			isa = PBXGroup;
+			children = (
+				D63AB35D20D06D1F0003BAD5 /* Sources */,
+				D63AB35020D06CD20003BAD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D63AB35020D06CD20003BAD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D63AB34F20D06CD20003BAD5 /* libPVRVk.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D63AB35D20D06D1F0003BAD5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D63AB36E20D06D7C0003BAD5 /* ApiObjectsVk.h */,
+				D63AB39020D06D810003BAD5 /* BindingsVk.cpp */,
+				D63AB37C20D06D7D0003BAD5 /* BindingsVk.h */,
+				D63AB39220D06D810003BAD5 /* BufferVk.cpp */,
+				D63AB37020D06D7C0003BAD5 /* BufferVk.h */,
+				D63AB37D20D06D7E0003BAD5 /* CommandBufferVk.cpp */,
+				D63AB39320D06D810003BAD5 /* CommandBufferVk.h */,
+				D63AB36C20D06D7C0003BAD5 /* CommandPoolVk.cpp */,
+				D63AB35E20D06D7B0003BAD5 /* CommandPoolVk.h */,
+				D63AB36620D06D7C0003BAD5 /* ComputePipelineVk.h */,
+				D63AB38120D06D7E0003BAD5 /* DescriptorSetVk.cpp */,
+				D63AB36F20D06D7C0003BAD5 /* DescriptorSetVk.h */,
+				D63AB36120D06D7C0003BAD5 /* DeviceMemoryVk.h */,
+				D63AB38420D06D7F0003BAD5 /* DeviceVk.cpp */,
+				D63AB36D20D06D7C0003BAD5 /* DeviceVk.h */,
+				D63AB38020D06D7E0003BAD5 /* ErrorsVk.h */,
+				D63AB38A20D06D800003BAD5 /* ExtensionsVk.cpp */,
+				D63AB36320D06D7C0003BAD5 /* ExtensionsVk.h */,
+				D63AB38B20D06D800003BAD5 /* ForwardDecObjectsVk.h */,
+				D63AB37320D06D7D0003BAD5 /* FramebufferVk.cpp */,
+				D63AB37420D06D7D0003BAD5 /* FramebufferVk.h */,
+				D63AB38720D06D7F0003BAD5 /* GraphicsPipelineVk.cpp */,
+				D63AB37120D06D7C0003BAD5 /* GraphicsPipelineVk.h */,
+				D63AB38D20D06D800003BAD5 /* HeadersVk.h */,
+				D63AB38520D06D7F0003BAD5 /* ImageVk.cpp */,
+				D63AB37620D06D7D0003BAD5 /* ImageVk.h */,
+				D63AB35F20D06D7C0003BAD5 /* InstanceVk.cpp */,
+				D63AB37220D06D7D0003BAD5 /* InstanceVk.h */,
+				D63AB36820D06D7C0003BAD5 /* LayersVk.cpp */,
+				D63AB38E20D06D800003BAD5 /* LayersVk.h */,
+				D63AB38F20D06D800003BAD5 /* Log.h */,
+				D63AB36B20D06D7C0003BAD5 /* PhysicalDeviceVk.cpp */,
+				D63AB38220D06D7E0003BAD5 /* PhysicalDeviceVk.h */,
+				D63AB36720D06D7C0003BAD5 /* PipelineCacheVk.h */,
+				D63AB36220D06D7C0003BAD5 /* PipelineConfigVk.h */,
+				D63AB37F20D06D7E0003BAD5 /* PipelineLayoutVk.cpp */,
+				D63AB37820D06D7D0003BAD5 /* PipelineLayoutVk.h */,
+				D63AB36A20D06D7C0003BAD5 /* PopulateCreateInfoVk.h */,
+				D63AB37920D06D7D0003BAD5 /* PVRVk.h */,
+				D63AB36020D06D7C0003BAD5 /* QueueVk.cpp */,
+				D63AB37E20D06D7E0003BAD5 /* QueueVk.h */,
+				D63AB37A20D06D7D0003BAD5 /* RefCounted.h */,
+				D63AB37720D06D7D0003BAD5 /* RenderPassVk.cpp */,
+				D63AB39420D06D810003BAD5 /* RenderPassVk.h */,
+				D63AB38C20D06D800003BAD5 /* SamplerVk.cpp */,
+				D63AB36420D06D7C0003BAD5 /* SamplerVk.h */,
+				D63AB39120D06D810003BAD5 /* ShaderVk.cpp */,
+				D63AB37B20D06D7D0003BAD5 /* ShaderVk.h */,
+				D63AB36920D06D7C0003BAD5 /* SurfaceVk.cpp */,
+				D63AB38320D06D7F0003BAD5 /* SurfaceVk.h */,
+				D63AB36520D06D7C0003BAD5 /* SwapchainVk.cpp */,
+				D63AB37520D06D7D0003BAD5 /* SwapchainVk.h */,
+				D63AB38920D06D800003BAD5 /* SyncVk.cpp */,
+				D63AB38620D06D7F0003BAD5 /* SyncVk.h */,
+				D63AB38820D06D800003BAD5 /* TypesVk.h */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D63AB34D20D06CD20003BAD5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D63AB3C220D06D810003BAD5 /* ForwardDecObjectsVk.h in Headers */,
+				D63AB3A820D06D810003BAD5 /* GraphicsPipelineVk.h in Headers */,
+				D63AB3C520D06D810003BAD5 /* LayersVk.h in Headers */,
+				D63AB3B120D06D810003BAD5 /* RefCounted.h in Headers */,
+				D63AB3CB20D06D810003BAD5 /* RenderPassVk.h in Headers */,
+				D63AB3B220D06D810003BAD5 /* ShaderVk.h in Headers */,
+				D63AB39820D06D810003BAD5 /* DeviceMemoryVk.h in Headers */,
+				D63AB3AC20D06D810003BAD5 /* SwapchainVk.h in Headers */,
+				D63AB3BF20D06D810003BAD5 /* TypesVk.h in Headers */,
+				D63AB3AD20D06D810003BAD5 /* ImageVk.h in Headers */,
+				D63AB3C420D06D810003BAD5 /* HeadersVk.h in Headers */,
+				D63AB3B020D06D810003BAD5 /* PVRVk.h in Headers */,
+				D63AB3BA20D06D810003BAD5 /* SurfaceVk.h in Headers */,
+				D63AB39D20D06D810003BAD5 /* ComputePipelineVk.h in Headers */,
+				D63AB39B20D06D810003BAD5 /* SamplerVk.h in Headers */,
+				D63AB3CA20D06D810003BAD5 /* CommandBufferVk.h in Headers */,
+				D63AB3BD20D06D810003BAD5 /* SyncVk.h in Headers */,
+				D63AB3A520D06D810003BAD5 /* ApiObjectsVk.h in Headers */,
+				D63AB39A20D06D810003BAD5 /* ExtensionsVk.h in Headers */,
+				D63AB39520D06D810003BAD5 /* CommandPoolVk.h in Headers */,
+				D63AB3B520D06D810003BAD5 /* QueueVk.h in Headers */,
+				D63AB3A620D06D810003BAD5 /* DescriptorSetVk.h in Headers */,
+				D63AB3A920D06D810003BAD5 /* InstanceVk.h in Headers */,
+				D63AB39920D06D810003BAD5 /* PipelineConfigVk.h in Headers */,
+				D63AB3AB20D06D810003BAD5 /* FramebufferVk.h in Headers */,
+				D63AB3AF20D06D810003BAD5 /* PipelineLayoutVk.h in Headers */,
+				D63AB39E20D06D810003BAD5 /* PipelineCacheVk.h in Headers */,
+				D63AB3A120D06D810003BAD5 /* PopulateCreateInfoVk.h in Headers */,
+				D63AB3B320D06D810003BAD5 /* BindingsVk.h in Headers */,
+				D63AB3B920D06D810003BAD5 /* PhysicalDeviceVk.h in Headers */,
+				D63AB3A420D06D810003BAD5 /* DeviceVk.h in Headers */,
+				D63AB3C620D06D810003BAD5 /* Log.h in Headers */,
+				D63AB3B720D06D810003BAD5 /* ErrorsVk.h in Headers */,
+				D63AB3A720D06D810003BAD5 /* BufferVk.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D63AB34E20D06CD20003BAD5 /* PVRVk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D63AB35A20D06CD20003BAD5 /* Build configuration list for PBXNativeTarget "PVRVk" */;
+			buildPhases = (
+				D63AB34B20D06CD20003BAD5 /* Sources */,
+				D63AB34C20D06CD20003BAD5 /* Frameworks */,
+				D63AB34D20D06CD20003BAD5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PVRVk;
+			productName = PVRVk;
+			productReference = D63AB34F20D06CD20003BAD5 /* libPVRVk.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D63AB34720D06CD20003BAD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Imagination Technologies";
+				TargetAttributes = {
+					D63AB34E20D06CD20003BAD5 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = D63AB34A20D06CD20003BAD5 /* Build configuration list for PBXProject "PVRVk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D63AB34620D06CD20003BAD5;
+			productRefGroup = D63AB35020D06CD20003BAD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D63AB34E20D06CD20003BAD5 /* PVRVk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D63AB34B20D06CD20003BAD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D63AB3AA20D06D810003BAD5 /* FramebufferVk.cpp in Sources */,
+				D63AB3AE20D06D810003BAD5 /* RenderPassVk.cpp in Sources */,
+				D63AB3A320D06D810003BAD5 /* CommandPoolVk.cpp in Sources */,
+				D63AB39C20D06D810003BAD5 /* SwapchainVk.cpp in Sources */,
+				D63AB3C120D06D810003BAD5 /* ExtensionsVk.cpp in Sources */,
+				D63AB3C820D06D810003BAD5 /* ShaderVk.cpp in Sources */,
+				D63AB3B820D06D810003BAD5 /* DescriptorSetVk.cpp in Sources */,
+				D63AB3B420D06D810003BAD5 /* CommandBufferVk.cpp in Sources */,
+				D63AB3BE20D06D810003BAD5 /* GraphicsPipelineVk.cpp in Sources */,
+				D63AB3B620D06D810003BAD5 /* PipelineLayoutVk.cpp in Sources */,
+				D63AB39720D06D810003BAD5 /* QueueVk.cpp in Sources */,
+				D63AB3C020D06D810003BAD5 /* SyncVk.cpp in Sources */,
+				D63AB3C920D06D810003BAD5 /* BufferVk.cpp in Sources */,
+				D63AB3C320D06D810003BAD5 /* SamplerVk.cpp in Sources */,
+				D63AB3C720D06D810003BAD5 /* BindingsVk.cpp in Sources */,
+				D63AB3BC20D06D810003BAD5 /* ImageVk.cpp in Sources */,
+				D63AB39F20D06D810003BAD5 /* LayersVk.cpp in Sources */,
+				D63AB39620D06D810003BAD5 /* InstanceVk.cpp in Sources */,
+				D63AB3A020D06D810003BAD5 /* SurfaceVk.cpp in Sources */,
+				D63AB3BB20D06D810003BAD5 /* DeviceVk.cpp in Sources */,
+				D63AB3A220D06D810003BAD5 /* PhysicalDeviceVk.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D63AB35820D06CD20003BAD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "../../../Bin/OSX/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TARGET_OS_MAC=1",
+					VK_USE_PLATFORM_MACOS_MVK,
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../../,
+					../../../../Builds/Include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D63AB35920D06CD20003BAD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "../../../Bin/OSX/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TARGET_OS_MAC=1",
+					VK_USE_PLATFORM_MACOS_MVK,
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../../,
+					../../../../Builds/Include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D63AB35B20D06CD20003BAD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D63AB35C20D06CD20003BAD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D63AB34A20D06CD20003BAD5 /* Build configuration list for PBXProject "PVRVk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D63AB35820D06CD20003BAD5 /* Debug */,
+				D63AB35920D06CD20003BAD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D63AB35A20D06CD20003BAD5 /* Build configuration list for PBXNativeTarget "PVRVk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D63AB35B20D06CD20003BAD5 /* Debug */,
+				D63AB35C20D06CD20003BAD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D63AB34720D06CD20003BAD5 /* Project object */;
+}

@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D63AB45A20D079EC0003BAD5 /* HelperVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB44B20D079EB0003BAD5 /* HelperVk.cpp */; };
+		D63AB45B20D079EC0003BAD5 /* SpriteVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB44D20D079EB0003BAD5 /* SpriteVk.cpp */; };
+		D63AB45C20D079EC0003BAD5 /* EffectVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB45120D079EB0003BAD5 /* EffectVk.cpp */; };
+		D63AB45D20D079EC0003BAD5 /* UIRendererVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB45420D079EB0003BAD5 /* UIRendererVk.cpp */; };
+		D63AB45E20D079EC0003BAD5 /* RenderManagerVk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D63AB45920D079EC0003BAD5 /* RenderManagerVk.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D63AB43520D079650003BAD5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D63AB43720D079650003BAD5 /* libPVRUtilsVk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPVRUtilsVk.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D63AB44420D079C90003BAD5 /* StructuredMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StructuredMemory.h; path = ../../../StructuredMemory.h; sourceTree = "<group>"; };
+		D63AB44520D079C90003BAD5 /* PVRUtilsGles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRUtilsGles.h; path = ../../../PVRUtilsGles.h; sourceTree = "<group>"; };
+		D63AB44620D079C90003BAD5 /* ArialBoldFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArialBoldFont.h; path = ../../../ArialBoldFont.h; sourceTree = "<group>"; };
+		D63AB44720D079C90003BAD5 /* PowerVRLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PowerVRLogo.h; path = ../../../PowerVRLogo.h; sourceTree = "<group>"; };
+		D63AB44820D079C90003BAD5 /* PVRUtilsVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRUtilsVk.h; path = ../../../PVRUtilsVk.h; sourceTree = "<group>"; };
+		D63AB44920D079EB0003BAD5 /* ConvertToVkTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConvertToVkTypes.h; path = ../../ConvertToVkTypes.h; sourceTree = "<group>"; };
+		D63AB44A20D079EB0003BAD5 /* AsynchronousVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsynchronousVk.h; path = ../../AsynchronousVk.h; sourceTree = "<group>"; };
+		D63AB44B20D079EB0003BAD5 /* HelperVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HelperVk.cpp; path = ../../HelperVk.cpp; sourceTree = "<group>"; };
+		D63AB44C20D079EB0003BAD5 /* RenderManagerVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderManagerVk.h; path = ../../RenderManagerVk.h; sourceTree = "<group>"; };
+		D63AB44D20D079EB0003BAD5 /* SpriteVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteVk.cpp; path = ../../SpriteVk.cpp; sourceTree = "<group>"; };
+		D63AB44E20D079EB0003BAD5 /* UIRendererShader_vk.fsh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIRendererShader_vk.fsh.h; path = ../../UIRendererShader_vk.fsh.h; sourceTree = "<group>"; };
+		D63AB44F20D079EB0003BAD5 /* EffectVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EffectVk.h; path = ../../EffectVk.h; sourceTree = "<group>"; };
+		D63AB45020D079EB0003BAD5 /* MemoryAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemoryAllocator.h; path = ../../MemoryAllocator.h; sourceTree = "<group>"; };
+		D63AB45120D079EB0003BAD5 /* EffectVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EffectVk.cpp; path = ../../EffectVk.cpp; sourceTree = "<group>"; };
+		D63AB45220D079EB0003BAD5 /* UIRendererShader_vk.vsh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIRendererShader_vk.vsh.h; path = ../../UIRendererShader_vk.vsh.h; sourceTree = "<group>"; };
+		D63AB45320D079EB0003BAD5 /* HelperVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelperVk.h; path = ../../HelperVk.h; sourceTree = "<group>"; };
+		D63AB45420D079EB0003BAD5 /* UIRendererVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UIRendererVk.cpp; path = ../../UIRendererVk.cpp; sourceTree = "<group>"; };
+		D63AB45520D079EB0003BAD5 /* UIRendererVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIRendererVk.h; path = ../../UIRendererVk.h; sourceTree = "<group>"; };
+		D63AB45620D079EC0003BAD5 /* UIRendererShader_vk.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = UIRendererShader_vk.fsh; path = ../../UIRendererShader_vk.fsh; sourceTree = "<group>"; };
+		D63AB45720D079EC0003BAD5 /* UIRendererShader_vk.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = UIRendererShader_vk.vsh; path = ../../UIRendererShader_vk.vsh; sourceTree = "<group>"; };
+		D63AB45820D079EC0003BAD5 /* SpriteVk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteVk.h; path = ../../SpriteVk.h; sourceTree = "<group>"; };
+		D63AB45920D079EC0003BAD5 /* RenderManagerVk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderManagerVk.cpp; path = ../../RenderManagerVk.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D63AB43420D079650003BAD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D63AB42E20D079650003BAD5 = {
+			isa = PBXGroup;
+			children = (
+				D63AB44320D079A70003BAD5 /* Sources */,
+				D63AB43820D079650003BAD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D63AB43820D079650003BAD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D63AB43720D079650003BAD5 /* libPVRUtilsVk.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D63AB44320D079A70003BAD5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D63AB44A20D079EB0003BAD5 /* AsynchronousVk.h */,
+				D63AB44920D079EB0003BAD5 /* ConvertToVkTypes.h */,
+				D63AB45120D079EB0003BAD5 /* EffectVk.cpp */,
+				D63AB44F20D079EB0003BAD5 /* EffectVk.h */,
+				D63AB44B20D079EB0003BAD5 /* HelperVk.cpp */,
+				D63AB45320D079EB0003BAD5 /* HelperVk.h */,
+				D63AB45020D079EB0003BAD5 /* MemoryAllocator.h */,
+				D63AB45920D079EC0003BAD5 /* RenderManagerVk.cpp */,
+				D63AB44C20D079EB0003BAD5 /* RenderManagerVk.h */,
+				D63AB44D20D079EB0003BAD5 /* SpriteVk.cpp */,
+				D63AB45820D079EC0003BAD5 /* SpriteVk.h */,
+				D63AB45620D079EC0003BAD5 /* UIRendererShader_vk.fsh */,
+				D63AB44E20D079EB0003BAD5 /* UIRendererShader_vk.fsh.h */,
+				D63AB45720D079EC0003BAD5 /* UIRendererShader_vk.vsh */,
+				D63AB45220D079EB0003BAD5 /* UIRendererShader_vk.vsh.h */,
+				D63AB45420D079EB0003BAD5 /* UIRendererVk.cpp */,
+				D63AB45520D079EB0003BAD5 /* UIRendererVk.h */,
+				D63AB44620D079C90003BAD5 /* ArialBoldFont.h */,
+				D63AB44720D079C90003BAD5 /* PowerVRLogo.h */,
+				D63AB44520D079C90003BAD5 /* PVRUtilsGles.h */,
+				D63AB44820D079C90003BAD5 /* PVRUtilsVk.h */,
+				D63AB44420D079C90003BAD5 /* StructuredMemory.h */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D63AB43620D079650003BAD5 /* PVRUtilsVk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D63AB44020D079650003BAD5 /* Build configuration list for PBXNativeTarget "PVRUtilsVk" */;
+			buildPhases = (
+				D63AB43320D079650003BAD5 /* Sources */,
+				D63AB43420D079650003BAD5 /* Frameworks */,
+				D63AB43520D079650003BAD5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PVRUtilsVk;
+			productName = PVRUtilsVk;
+			productReference = D63AB43720D079650003BAD5 /* libPVRUtilsVk.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D63AB42F20D079650003BAD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Imagination Technologies";
+				TargetAttributes = {
+					D63AB43620D079650003BAD5 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = D63AB43220D079650003BAD5 /* Build configuration list for PBXProject "PVRUtilsVk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D63AB42E20D079650003BAD5;
+			productRefGroup = D63AB43820D079650003BAD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D63AB43620D079650003BAD5 /* PVRUtilsVk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D63AB43320D079650003BAD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D63AB45A20D079EC0003BAD5 /* HelperVk.cpp in Sources */,
+				D63AB45E20D079EC0003BAD5 /* RenderManagerVk.cpp in Sources */,
+				D63AB45C20D079EC0003BAD5 /* EffectVk.cpp in Sources */,
+				D63AB45B20D079EC0003BAD5 /* SpriteVk.cpp in Sources */,
+				D63AB45D20D079EC0003BAD5 /* UIRendererVk.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D63AB43E20D079650003BAD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "../../../Bin/iOS/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TARGET_OS_IPHONE=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../../../,
+					../../../,
+					../../../../../Builds/Include/,
+					../../../../../,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D63AB43F20D079650003BAD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "../../../Bin/iOS/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_OS_IPHONE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../../../,
+					../../../,
+					../../../../../Builds/Include/,
+					../../../../../,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D63AB44120D079650003BAD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D63AB44220D079650003BAD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D63AB43220D079650003BAD5 /* Build configuration list for PBXProject "PVRUtilsVk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D63AB43E20D079650003BAD5 /* Debug */,
+				D63AB43F20D079650003BAD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D63AB44020D079650003BAD5 /* Build configuration list for PBXNativeTarget "PVRUtilsVk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D63AB44120D079650003BAD5 /* Debug */,
+				D63AB44220D079650003BAD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D63AB42F20D079650003BAD5 /* Project object */;
+}
